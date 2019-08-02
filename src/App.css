@@ -1,33 +1,306 @@
-.App {
-  text-align: center;
+.main {
+
+  height: 100vh;
+
+  overflow: hidden;
+
+  padding: 0;
+
+  margin: 0;
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.content {
+
+  background-color: #000000 !important;
+
+  z-index: -15;
+
+  position: relative;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section {
+
+  height: 100vh;
+
+  position: relative;
+
+}
+
+section:nth-child(1) {
+
+  background-color: #212121 !important;
+
+  background-image: url('./assets/img/1.jpg');
+
+  background-size: cover;
+
+  background-position: center center;
+
+  z-index: -10;
+
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
+
+}
+
+section:nth-child(1) .wrapper {
+
+  height: 100vh;
+
+  width: 100vw;
+
   display: flex;
-  flex-direction: column;
+
+  justify-content: flex-end;
+
   align-items: center;
+
+  flex-direction: row;
+
+  padding: 3em 0;
+
+}
+
+section:nth-child(1) .wrapper .intro {
+
+  margin-right: 10%;
+
+  background-color: rgba(255, 255, 255, 0.2);
+
+  padding: 2em;
+
+  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%) !important;
+
+  text-align: center;
+
+}
+
+section:nth-child(1) .wrapper h1 {
+
+  font-size: 8vw;
+
+  color: transparent;
+
+  margin-bottom: 0;
+
+  font-weight: 100;
+
+  color: rgba(255, 255, 255, 0.8);
+
+
+}
+
+section:nth-child(1) .wrapper p {
+
+  margin-top: 0;
+
+  font-size: 14px;
+
+  color: rgba(255, 255, 255, 1);
+
+  text-transform: uppercase;
+
+  letter-spacing: 12px;
+
+  font-weight: bold;
+
+}
+
+section:nth-child(2) {
+
+  background-color: #212121;
+
+  color: #ffffff;
+
+  position: relative;
+
+  z-index: 999;
+
+  display: flex;
+
+  flex-direction: column;
+
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+section:nth-child(2) h1 {
+
+  font-size: 5vw;
+
+  color: transparent;
+
+  margin-bottom: 10px;
+
+  padding-top: 18px;
+
+  font-weight: 100;
+
+  color: rgba(255, 255, 255, 0.8);
+
+  text-align: center;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section:nth-child(2) img {
+
+  height: 400px;
+
+  width: 100%;
+
+  object-fit: cover;
+
+  padding: 0 10px;
+
+}
+
+.caption {
+
+  font-size: 2vw;
+
+  text-align: center;
+
+  font-weight: 100;
+
+  color: rgba(255, 255, 255, 0.8);
+
+  left: 4px;
+
+}
+
+section:nth-child(3) {
+
+  background-color: #ffffff;
+
+}
+
+section:nth-child(4) {
+
+  background-color: #212121;
+
+  color: #ffffff;
+
+}
+
+section:nth-child(5) {
+
+  background-color: #ffffff;
+
+}
+
+section:nth-child(6) {
+
+  background-color: #212121;
+
+  color: #ffffff;
+
+}
+
+.nav {
+
+  position: fixed;
+
+  top: 5vh;
+
+  left: 10%;
+
+}
+
+.nav button {
+
+  background: none;
+
+  border: 0.5px solid #fff;
+
+  padding: 12px 20px;
+
+  font-size: 14px;
+
+  min-width: 200px;
+
+  margin-left: 5px;
+
+  cursor: pointer;
+
+  color: #fff;
+
+  letter-spacing: 4px;
+
+  transition: color 0.4s linear;
+
+  position: relative;
+
+}
+
+.nav button:hover {
+
+  color: #000;
+
+}
+
+.nav button::before {
+
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background-color: #fff;
+
+  z-index: -1;
+
+  transition: transform 0.5s;
+
+  transform-origin: 0 0;
+
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+
+}
+
+.nav button.prev::before {
+
+  transform: scaleX(0);
+
+}
+
+.nav button.next::before {
+
+  transform: scaleY(0);
+
+}
+
+.nav button.prev:hover::before {
+
+  transform: scaleX(1);
+
+}
+
+.nav button.next:hover::before {
+
+  transform: scaleY(1);
+
+}
+
+.overlay {
+
+  position: absolute;
+
+  height: 100%;
+
+  width: 100%;
+
+  z-index: -5;
+
+  background-color: rgba(0, 0, 0, 0);
+
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)) !important;
+
 }
