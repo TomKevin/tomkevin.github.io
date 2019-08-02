@@ -1,16 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.2cce8147.chunk.css",
-    "main.js": "/static/js/main.28647029.chunk.js",
-    "main.js.map": "/static/js/main.28647029.chunk.js.map",
+    "main.css": "/static/css/main.f9f158e8.chunk.css",
+    "main.js": "/static/js/main.7c74359a.chunk.js",
+    "main.js.map": "/static/js/main.7c74359a.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.b41502e9.chunk.js": "/static/js/2.b41502e9.chunk.js",
-    "static/js/2.b41502e9.chunk.js.map": "/static/js/2.b41502e9.chunk.js.map",
+    "static/css/2.38695677.chunk.css": "/static/css/2.38695677.chunk.css",
+    "static/js/2.2ab85577.chunk.js": "/static/js/2.2ab85577.chunk.js",
+    "static/js/2.2ab85577.chunk.js.map": "/static/js/2.2ab85577.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.054774adbe886ee6e3c29227ef1745b5.js": "/precache-manifest.054774adbe886ee6e3c29227ef1745b5.js",
+    "precache-manifest.1595ad8244f5c0a0ae7770901a799d32.js": "/precache-manifest.1595ad8244f5c0a0ae7770901a799d32.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/static/css/main.2cce8147.chunk.css.map",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+    "static/css/2.38695677.chunk.css.map": "/static/css/2.38695677.chunk.css.map",
+    "static/css/main.f9f158e8.chunk.css.map": "/static/css/main.f9f158e8.chunk.css.map",
+    "static/media/App.css": "/static/media/1.b367bf4c.jpg",
+    "static/media/electron.png": "/static/media/electron.3ba2a5b8.png",
+    "static/media/graphql.png": "/static/media/graphql.8c005987.png",
+    "static/media/laravel.png": "/static/media/laravel.caa9b591.png",
+    "static/media/mongodb.png": "/static/media/mongodb.c81f0054.png",
+    "static/media/mysql.png": "/static/media/mysql.4988e89c.png",
+    "static/media/nodejs.png": "/static/media/nodejs.08ebf3d0.png",
+    "static/media/react.png": "/static/media/react.47ce6e77.png"
   }
 }
