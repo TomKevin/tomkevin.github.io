@@ -453,13 +453,9 @@ section:nth-child(3) {
     }
 
     /* Landing Page */
-    section:nth-child(2) {
-
-      padding: 0 80px;
-
-    }
-
     section:nth-child(2) > h1 {
+
+      margin-top: 1rem;
     
       font-size: 3rem;
     
