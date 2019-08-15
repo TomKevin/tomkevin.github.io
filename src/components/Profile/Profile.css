@@ -261,6 +261,8 @@ section:nth-child(3) {
 
   text-transform: capitalize;
 
+  color: #616161;
+
 }
 
 .intro > div:nth-child(2) {
