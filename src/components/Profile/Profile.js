@@ -9,15 +9,15 @@ class Profile extends Component {
 
         const sectionOne = document.querySelector('.section-one');
 
-        console.log(sectionOne);
+        // console.log(sectionOne);
 
         const sectionOneObserver = new IntersectionObserver((entries, sectionOneObserver) => {
 
             entries.forEach(entry => {
 
-                console.log(entry);
+                // console.log(entry);
 
-                console.log(`${JSON.stringify(entry.isIntersecting)}`);
+                // console.log(`${JSON.stringify(entry.isIntersecting)}`);
 
                 if(!entry.isIntersecting) {
 
@@ -63,7 +63,7 @@ class Profile extends Component {
 
         const targetId = event.currentTarget.getAttribute("href");
 
-        console.log(targetId);
+        // console.log(targetId);
 
         window.scrollTo({ 
 
@@ -99,7 +99,7 @@ class Profile extends Component {
 
                 <nav className="navbar nav-scrolled">
 
-                    <a className="navbar-brand" href="/profile"><span>K</span>EVIN <span>M</span>OTURI</a>
+                    <a className="navbar-brand" href="/"><span>K</span>EVIN <span>M</span>OTURI</a>
                         
                     <ul>
 
@@ -107,7 +107,7 @@ class Profile extends Component {
 
                         <li><a href="#about" onClick={this.smoothScroll}>About</a></li>
 
-                        <li><a href="#about" onClick={this.smoothScroll}>Technologies</a></li>
+                        <li><a href="#technologies" onClick={this.smoothScroll}>Technologies</a></li>
 
                     </ul>
 
@@ -121,13 +121,43 @@ class Profile extends Component {
 
                 <section className="section-one" id="home">
 
-                    <h1>Section One</h1>
+                    <img src={require('./img/3.jpg')} alt="Kevin Moturi" />
+
+                    <h1>Hi, I'm Kevin</h1>
+
+                    <h4>Full Stack Software Developer</h4>
 
                 </section>
 
                 <section id="about">
 
-                    <h1>Section Two</h1>
+                    <div className="intro">
+
+                        <div className="intro-text">
+
+                            <h1>Little About Me</h1>
+
+                            <p>Hello There, I'm Kevin Moturi. I love javascript because it's fast, flexible and scalable. I can also be able to make wide range of applications for web, mobile and desktop applications that are cross platform, Both iOS and Android for mobile applications and MacOS and Windows for desktop applications.</p>
+
+                            <p>I also enjoy being challenged to work and engage with projects that require me to work outside my comfort and knowledge set, as i continue to learn new languages and development techniques that are important to me and the success of your organization.</p>
+
+                            <p>Please scroll through to view my skill sets.</p>
+
+                        </div>
+
+                        <div className="intro-image">
+
+                            <img src={require('./img/3.jpg')} alt="Kevin Moturi" />
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section id="technologies">
+
+                    
 
                 </section>
                 
