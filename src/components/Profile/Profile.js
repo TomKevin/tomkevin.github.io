@@ -155,7 +155,7 @@ class Profile extends Component {
 
                 <nav className="navbar nav-scrolled">
 
-                    <a className="navbar-brand" href="/"><span>K</span>EVIN <span>M</span>OTURI</a>
+                    <a className="navbar-brand" href="/">KEVIN MOTURI</a>
                         
                     <ul>
 
@@ -257,7 +257,7 @@ class Profile extends Component {
 
                                         <h1>React JS - Frontend</h1>
 
-                                        <p className="text-lg">I use react because its fast, simple and scalable and allows me to create reusable ui components and its easy to integrate other external javascript libraries with it.</p>
+                                        <p className="text-lg">I use react because its fast, simple and scalable and allows me to create reusable ui components and its easy to integrate other external javascript libraries.</p>
 
                                     </div>
 
@@ -285,7 +285,7 @@ class Profile extends Component {
 
                                         <h1>GraphQL - (Frontend / Backend)</h1>
 
-                                        <p className="text-lg">It a syntax that describes how to ask for data, and is generally used to load data from a server to a client. User's in applications i make with graphql are able to make a single call to fetch the required information rather than to construct several REST requests to fetch the same</p>
+                                        <p className="text-lg">It's a syntax that describes how to ask for data, and is generally used to load data from a server to a client. User's in applications i make with graphql are able to make a single call to fetch the required information rather than to construct several REST requests to fetch the same</p>
 
                                     </div>
 
@@ -335,7 +335,7 @@ class Profile extends Component {
 
                                         <h1>Electron JS</h1>
 
-                                        <p className="text-lg">It's a runtime framework that allows the user to create desktop-suite applications with HTML5, CSS, and JavaScript. Combined with react js, i can be able to turn my existing web or mobile applications into dektop apps that can be installed in either mac or windows machines.</p>
+                                        <p className="text-lg">It's a runtime framework that allows me to create desktop-suite applications with HTML5, CSS, and JavaScript. Combined with react js, i can be able to turn my existing web or mobile applications into dektop apps that can be installed in either mac or windows machine.</p>
 
                                     </div>
 
