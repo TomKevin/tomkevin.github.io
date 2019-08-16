@@ -213,7 +213,141 @@ class Profile extends Component {
 
                 <section id="skillset">
 
-                    
+                    <div className="tabs">
+
+                        <div className="container">
+
+                            <div id="tab-1" className="tab-item tab-border" onClick={this.selectItem}>
+
+                                <FaCloud className="icon" />
+                        
+                                <p className="hide-sm">Web Development</p>
+                        
+                            </div>
+
+                            <div id="tab-2" className="tab-item" onClick={this.selectItem}>
+
+                                <FaMobile className="icon" />
+                        
+                                <p className="hide-sm">Mobile Development</p>
+                        
+                            </div>
+
+                            <div id="tab-3" className="tab-item" onClick={this.selectItem}>
+
+                                <FaDesktop className="icon" />
+                        
+                                <p className="hide-sm">Desktop Development</p>
+                        
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div className="tab-content">
+
+                        <div className="container">
+
+                            <div id="tab-1-content" className="tab-content-item show">
+
+                                <div className="tab-1-content-inner">
+
+                                    <div>
+
+                                        <h1>React JS - Frontend</h1>
+
+                                        <p className="text-lg">I use react because its fast, simple and scalable and allows me to create reusable ui components and its easy to integrate other external javascript libraries with it.</p>
+
+                                    </div>
+
+                                    <img src={require('./img/react.png')} alt="Kevin Moturi" />
+
+                                </div>
+
+                                <div className="tab-1-content-inner">
+
+                                    <div>
+
+                                        <h1>Node JS - Backend</h1>
+
+                                        <p className="text-lg">Node JS has enabled me to build reat-time applications that are light weight and efficient.</p>
+
+                                    </div>
+
+                                    <img src={require('./img/nodejs.png')} alt="Kevin Moturi" />
+
+                                </div>
+
+                                <div className="tab-1-content-inner">
+
+                                    <div>
+
+                                        <h1>GraphQL - (Frontend / Backend)</h1>
+
+                                        <p className="text-lg">It a syntax that describes how to ask for data, and is generally used to load data from a server to a client. User's in applications i make with graphql are able to make a single call to fetch the required information rather than to construct several REST requests to fetch the same</p>
+
+                                    </div>
+
+                                    <img src={require('./img/graphql.png')} alt="Kevin Moturi" />
+
+                                </div>
+
+                                <div className="tab-1-content-inner">
+
+                                    <div>
+
+                                        <h1>Laravel - Backend</h1>
+
+                                        <p className="text-lg">It's a PHP framework for effective web development solutions with Effective authorization process, presence of object-oriented libraries, Useful MVC support and Top-notch security.</p>
+
+                                    </div>
+
+                                    <img src={require('./img/laravel.png')} alt="Kevin Moturi" />
+
+                                </div>
+
+                            </div>
+
+                            <div id="tab-2-content" className="tab-content-item">
+
+                                <div className="tab-1-content-inner">
+
+                                    <div>
+
+                                        <h1>React Native</h1>
+
+                                        <p className="text-lg">It's a framework that enables me to create robust mobile applications using my existing JavaScript knowledge. It offers faster mobile development, and more efficient code sharing across iOS, Android, and the Web, without sacrificing the end user's experience or application quality. It enables my applications to have a native look and feel.</p>
+
+                                    </div>
+
+                                    <img src={require('./img/react.png')} alt="Kevin Moturi" />
+
+                                </div>
+
+                            </div>
+
+                            <div id="tab-3-content" className="tab-content-item">
+
+                                <div className="tab-1-content-inner">
+
+                                    <div>
+
+                                        <h1>Electron JS</h1>
+
+                                        <p className="text-lg">It's a runtime framework that allows the user to create desktop-suite applications with HTML5, CSS, and JavaScript. Combined with react js, i can be able to turn my existing web or mobile applications into dektop apps that can be installed in either mac or windows machines.</p>
+
+                                    </div>
+
+                                    <img src={require('./img/electron.png')} alt="Kevin Moturi" />
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </section>
                 
