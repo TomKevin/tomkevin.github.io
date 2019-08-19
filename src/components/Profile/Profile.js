@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaCloud, FaMobile, FaDesktop } from 'react-icons/fa'
+import { FaCloud, FaMobile, FaDesktop, FaEnvelope, FaGlobe, FaPhone } from 'react-icons/fa'
 import './Profile.css';
 
 class Profile extends Component {
@@ -164,6 +164,8 @@ class Profile extends Component {
                         <li><a href="#about" onClick={this.smoothScroll}>About</a></li>
 
                         <li><a href="#skillset" onClick={this.smoothScroll}>Skill Set</a></li>
+
+                        <li><a href="#contact" onClick={this.smoothScroll}>Contact</a></li>
 
                     </ul>
 
@@ -348,6 +350,48 @@ class Profile extends Component {
                         </div>
 
                     </div>
+
+                </section>
+
+                <section id="contact">
+
+                    <div className="contacts">
+
+                        <div className="container">
+
+                            <div className="contact-cols">
+
+                                <div className="contact-cols-item">
+
+                                    <FaEnvelope className="contact-cols-item-icon" />
+                                
+                                    <p>moturikev@gmail.com</p>
+                                
+                                </div>
+
+                                <div className="contact-cols-item">
+
+                                    <FaPhone className="contact-cols-item-icon" />
+                                
+                                    <p>+254713130013</p>
+                                
+                                </div>
+
+                                <div className="contact-cols-item">
+
+                                    <FaGlobe className="contact-cols-item-icon" />
+                                
+                                    <p>tomkevin.github.io</p>
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <p>Kevin Moturi &copy; {new Date().getFullYear()}. All Rights Reserved</p>
 
                 </section>
                 
