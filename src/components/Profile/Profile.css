@@ -40,6 +40,8 @@ body {
   position: fixed;
 
   top: 20px;
+
+  z-index: 999;
   
 }
 
@@ -93,7 +95,7 @@ body {
 
   text-align: center;
 
-  padding: 0 30px;
+  padding: 0 20px;
 
   min-width: 120px;
 
@@ -101,7 +103,7 @@ body {
 
   font-weight: 100;
 
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 
 }
 
@@ -429,7 +431,7 @@ section:nth-child(4) {
 /* Container */
 .container {
 
-  max-width: 70%;
+  max-width: 80%;
 
   margin: auto;
 
@@ -554,7 +556,99 @@ section:nth-child(4) {
 
 }
 
-section:nth-child(5) {
+.integrations-header > h1{
+
+  margin-bottom: 0.6em;
+
+  letter-spacing: 4px;
+
+  color: #5c6bc0;
+
+  text-transform: uppercase;
+
+  font-weight: 100;
+
+  font-size: 3em;
+
+  margin-top: 2em;
+
+  margin-bottom: 1em;
+
+}
+
+.integrations-item {
+
+  width: 100%;
+
+  /* padding: 1em 0; */
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.integrations-item > div {
+
+  flex-grow: 1;
+
+  min-height: 200px;
+
+  box-sizing: border-box;
+
+}
+
+.integrations-item > div > h1 {
+
+  margin-bottom: 0.6em;
+
+  letter-spacing: 4px;
+
+  color: #5c6bc0;
+
+  text-transform: uppercase;
+
+  font-weight: 100;
+
+}
+
+.integrations-item > div > p {
+
+  letter-spacing: 2px;
+
+  text-transform: capitalize;
+
+  color: #999;
+
+  font-size: 15px;
+
+  line-height: 25px;
+
+}
+
+.integrations-item > div:nth-child(2) {
+
+    margin: 0;
+
+    padding: 0 2em;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.integrations-item > .img > img {
+
+  height: 100px;
+
+  object-fit: contain;
+
+}
+
+section:nth-child(7) {
 
   background-color: #e8eaf6;
 
@@ -566,11 +660,11 @@ section:nth-child(5) {
 
   flex-direction: column;
 
-  padding: 1em 0;
+  padding: 4em 0;
 
 }
 
-section:nth-child(5) > .contacts {
+section:nth-child(7) > .contacts {
 
   width: 100%;
 
@@ -588,7 +682,7 @@ section:nth-child(5) > .contacts {
 
 }
 
-section:nth-child(5) > .contacts > .container {
+section:nth-child(7) > .contacts > .container {
 
   box-sizing: border-box;
 
@@ -655,7 +749,7 @@ section:nth-child(5) > .contacts > .container {
 
 }
 
-section:nth-child(5) > p {
+section:nth-child(7) > p {
 
   letter-spacing: 2px;
 
@@ -900,6 +994,34 @@ section:nth-child(5) > p {
 
       max-width: 100%;
     
+    }
+
+    .integrations-item {
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .integrations-item > div {
+
+      width: 100%;
+
+    }
+
+    .integrations-item > div:nth-child(2) {
+
+        margin: 0;
+
+        padding: 0;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
     }
 
 }

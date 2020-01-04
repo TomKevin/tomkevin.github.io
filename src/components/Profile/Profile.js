@@ -1,6 +1,52 @@
 import React, { Component } from 'react';
-import { FaCloud, FaMobile, FaDesktop, FaEnvelope, FaGlobe, FaPhone } from 'react-icons/fa'
+import Carousel from './../Common/Carousel';
+import { FaCloud, FaMobile, FaDesktop, FaEnvelope, FaGlobe, FaPhone } from 'react-icons/fa';
 import './Profile.css';
+
+const photos = [
+
+    require('./img/contract-farming/1.png'),
+
+    require('./img/contract-farming/2.png'),
+
+    require('./img/contract-farming/3.png'),
+
+    require('./img/contract-farming/4.png'),
+
+];
+
+const ajeipay = [
+
+    require('./img/ajeipay/1.png'),
+
+    require('./img/ajeipay/2.png'),
+
+    require('./img/ajeipay/3.png'),
+
+    require('./img/ajeipay/4.png'),
+
+];
+
+const hoodlink = [
+
+    require('./img/hoodlink/1.png'),
+
+    require('./img/hoodlink/2.png'),
+
+    require('./img/hoodlink/3.png'),
+
+    require('./img/hoodlink/4.png'),
+
+    require('./img/hoodlink/5.png'),
+
+];
+
+const fraudvigilance = [
+
+    require('./img/fraudvigilance/1.png'),
+
+    require('./img/fraudvigilance/2.png'),
+];
 
 class Profile extends Component {
 
@@ -164,6 +210,10 @@ class Profile extends Component {
                         <li><a href="#about" onClick={this.smoothScroll}>About</a></li>
 
                         <li><a href="#skillset" onClick={this.smoothScroll}>Skill Set</a></li>
+
+                        <li><a href="#integrations" onClick={this.smoothScroll}>Integrations</a></li>
+
+                        <li><a href="#projects" onClick={this.smoothScroll}>My Projects</a></li>
 
                         <li><a href="#contact" onClick={this.smoothScroll}>Contact</a></li>
 
@@ -344,6 +394,168 @@ class Profile extends Component {
                                     <img src={require('./img/electron.png')} alt="Kevin Moturi" />
 
                                 </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section id="integrations">
+
+                    <div className="container">
+
+                        <div className="integrations-header">
+
+                            <h1>Integrations</h1>
+
+                        </div>
+
+                        <div className="integrations-item">
+
+                            <div className="content">
+
+                                <h1>M-PESA</h1>
+
+                                <p>I have been able to integrate mpesa on several applications using the daraja api. i have used lipa na mpesa for sim tool kit push pop ups to allow customers pay for goods and services online.</p>
+
+                                <p>Alternatively, i have implement c2b for clients to make payments directly by accessing sim tool kit and selecting buy goods and services option to make payments.</p>
+
+                                <p>Finally, I have integrated mpesa b2c in scenarios where the business has to make payments directly to the client's phone incase of a refund.</p>
+
+                            </div>
+
+                            <div className="img">
+
+                                <img src={require('./img/mpesa.png')} alt="mpesa" />
+
+                            </div>
+
+                        </div>  
+
+                        <div className="integrations-item">
+
+                            <div className="content">
+
+                                <h1>Africa's Talking</h1>
+
+                                <p>With Africa's talking, i have integrated various mobile engagement solutions through ussd and sms apis.</p>
+
+                            </div>
+
+                            <div className="img">
+
+                                <img style={{ height: '300px' }} src={require('./img/africas-talking.png')} alt="africastalking" />
+
+                            </div>
+
+                        </div>   
+
+                        <div className="integrations-item">
+
+                            <div className="content">
+
+                                <h1>Bcoin</h1>
+
+                                <p>Bcoin library enabled me to create bitcoin application for consumers who want to buy goods and services using bitcoins with also ability to create multiple wallets and addresses for each transactions.</p>
+
+                            </div>
+
+                            <div className="img">
+
+                                <img src={require('./img/bcoin.png')} alt="africastalking" />
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section id="projects">
+
+                    <div className="container">
+
+                        <div className="integrations-header">
+
+                            <h1>My Projects</h1>
+
+                        </div>  
+
+                        <div className="integrations-item">
+
+                            <div className="content">
+
+                                <h1>Contract Farming</h1>
+
+                                <p>It's an ongoing project that will enable companies dealing with export of farm produce in Kenya get a chance to monitor farms of the clients they have partnered with.</p>
+
+                                <p>The companies will be responsible for offering any services needed during planting and harvesting of the farm produce.</p>
+
+                            </div>
+
+                            <div>
+
+                                <Carousel photos={photos} />
+
+                            </div>
+
+                        </div>
+
+                        <div className="integrations-item">
+
+                            <div className="content">
+
+                                <h1>Ajeipay</h1>
+
+                                <p>Its a bitcoin mobile application still on development that is linked to the blockchain network .</p>
+
+                                <p>It enable users to buy and sell goods and services using bitcoins just by creating multiple wallets and unique addresses for each transaction securely in the blockchain network.</p>
+
+                            </div>
+
+                            <div>
+
+                                <Carousel photos={ajeipay} />
+
+                            </div>
+
+                        </div>
+
+                        <div className="integrations-item">
+
+                            <div className="content">
+
+                                <h1>Hoodlink</h1>
+
+                                <p>Hoodlink is an application that aims at linking property owners to potential clients who want to either buy or rent different types of property from mansions, apartments, office spaces, shops or land .</p>
+
+                            </div>
+
+                            <div>
+
+                                <Carousel photos={hoodlink} />
+
+                            </div>
+
+                        </div>
+
+                        <div className="integrations-item">
+
+                            <div className="content">
+
+                                <h1>Fraud Vigilance</h1>
+
+                                <p>Its a fraud prevention membership organization providing fraud prevention service, managing the largest database of instance of fraudulent conduct in the country .</p>
+
+                            </div>
+
+                            <div>
+
+                                <Carousel photos={fraudvigilance} />
 
                             </div>
 
